@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+<!--     
+  <div class="alert alert-warning" style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+  <div class="alert alert-danger" style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+  <div class="alert bg-dark text-light" style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+  <div class="alert alert-info" style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+  <div class="alert alert-success " style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+  <div class="alert alert-primary text-danger" style="width: 50%;">
+    <strong>warning !</strong> something went wrong
+  </div>
+
+  <div class="container mt-3">
+    <h2>Simple Collapsible</h2>
+    <a href="#demo" class="btn btn-primary" data-bs-toggle="collapse">read more</a>
+    <div id="demo" class="collapse">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+  </div>
+  <details>
+    <summary>read more</summary>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque molestiae deleniti nulla eaque adipisci commodi minima labore quo amet assumenda.</p>
+  </details>
+
+
+<!-- modal -->
+ <!-- Button to Open the Modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+    submit
+  </button> -->
+  
+  <!-- The Modal -->
+  <!-- <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+   -->
+        <!-- Modal Header -->
+        <!-- <div class="modal-header alert alert-danger">
+        
+             <strong>Alert</strong>
+       
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div> -->
+  
+        <!-- Modal body -->
+        <!-- <div class="modal-body">
+          your form successfuly submited
+        </div>
+  
+        <!-- Modal footer -->
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+        </div>
+  
+      </div>
+    </div>
+  </div> -->
+
+<!-- toast -->
+<!-- <div class="toast show">
+    <div class="toast-header">
+      Toast Header
+      <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+      Some text inside the toast body
+    </div>
+  </div>
+  <div class=" alert alert-danger" style="width: 50%;">
+    <strong>something went wrong!</strong>warning
+
+  </div> -->
+
+
+  <!-- <div class="alert alert-info">
+    <strong>watch it!</strong> something is missing
+  </div>
+
+
+  <div class=" alert alert-success text-light"  style="width: 50%;">
+    <strong>opps!</strong> you did it wrong
+  </div>
+
+
+    <div class=" alert alert-info" style="width: 50%;">
+      <strong>see!</strong>whats wrong
+    </div>
+<details>
+  <summary>readmore</summary>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam distinctio officia esse perspiciatis quis, sed aspernatur reiciendis necessitatibus vel voluptates magnam a. Ut impedit hic blanditiis culpa deleniti atque quo est mollitia earum dolorum?</p>
+</details>  --> 
+
+
+<!-- sidebar -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+    document.getElementById("toastbtn").onclick = function() {
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show())
+    }
+    </script>
+</body>
+</html>
